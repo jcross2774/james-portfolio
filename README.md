@@ -4,7 +4,7 @@
 
 ### Features
 
-- Real tie chat engine for comments
+- Real time chat engine for comments
 - Blog
 - Portfolio
 - Drag adn drip interface
