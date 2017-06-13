@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20170603054828) do
     t.datetime "updated_at", null: false
   end
 
+
   add_foreign_key "blogs", "topics"
   add_foreign_key "technologies", "portfolios"
 end
