@@ -163,7 +163,7 @@ s
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -241,9 +241,17 @@ iframe{
   text-align: left;
 }
 
-
-
+.tech-news {
+  color: black;
+  margin: 15px;
+}
  
+ .tech-news a {
+  color: orange;
+  margin: 20px;
+}
 
-
-
+.tech-news > .card {
+  padding: 25px;
+ background: rgba(225,225,225,0.6);
+}
