@@ -53,14 +53,8 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 10px;
 }
-s
+
 /* Padding for spacing */
 .inner {
   padding: 2rem;
@@ -215,6 +209,8 @@ s
 }
 
 iframe{
+    padding-right: 20px;
+    padding-left: 20px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
     filter: alpha(opacity=60);
     -moz-opacity: 0.4;
@@ -254,4 +250,43 @@ iframe{
 .tech-news > .card {
   padding: 25px;
  background: rgba(225,225,225,0.6);
+}
+
+.app-card-container {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+hr.style1{
+  border-top: 1px solid grey;
+}
+
+.home-container {
+  background: rgba(0,0,0,.5);
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
 }
