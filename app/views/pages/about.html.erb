@@ -1,16 +1,106 @@
-<div class="row">
-  <div class="col-md-4">
-
-    <%= image_tag "profile2.jpg", width:250, height: 250, alt: "profile image" %>
-  </div>
-
-  <div class="col-md-8">
+<div class="app-card-container">
   
     <h1>About Me</h1>
-    <hr>
-    <div class="about-content"><p>Through my 19 years of experience as a Technical Recruiter, Recruiting Manager and Managing Director, I have realized my passion for technology and have embarked down a new path as a full stack developer.</p>
+    
+    <hr class="style1">
+    <br>
 
-    <p>It is my mission to use my past experience working with and managing dynamic teams to make me a better developer. I am driven to produce high quality web sites, applications and software the people love to use.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profile2.jpg", width:200, height: 200, alt: "profile image", class: 'profile-img' %>
+
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div 
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <p>Through my 19 years of experience as a Technical Recruiter, Recruiting Manager and Managing Director, I have realized my passion for technology and have embarked down a new path as a full stack developer.</p>
+
+        <p>It is my mission to use my past experience working with and managing dynamic teams to make me a better developer. I am driven to produce high quality web sites, applications and software the people love to use.</p>
+
+        <p>
+          <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#jobHistory"
+          aria-expanded="false"
+          aria-controler="jobHistory"
+        >
+
+            Job History
+          </button>
+
+          <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#education"
+          aria-expanded="false"
+          aria-controler="education"
+        >
+            Education
+          </button>
+
+          <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#training"
+          aria-expanded="false"
+          aria-controler="training"
+        >
+
+            Training
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="about-btn-container">
+            Job 1
+            </div>
+            <div class="about-btn-container">
+            Job 2
+            </div>
+            <div class="about-btn-container">
+            Job 3
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="about-btn-container">
+            School 1
+            </div>
+            <div class="about-btn-container">
+            School 2
+            </div>
+          </div>
+
+          <div class="collapse" id="training">
+            <div class="about-btn-container">
+            Training 1
+            </div>
+            <div class="app-card-container">
+            Training 1
+            </div>
+          </div>
+        </p>
+      </div>
     </div>
   </div>
 </div>
