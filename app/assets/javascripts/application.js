@@ -21,7 +21,6 @@
 //= require_tree .
 //= require bootstrap-sprockets
 
-
 $.extend($.gritter.options, { 
     position: 'bottom-left', // defaults to 'top-right' but can be 'bottom-left', 'bottom-right', 'top-left', 'top-right' (added in 1.7.1)
     fade_in_speed: 'medium', // how fast notifications fade in (string or int)
